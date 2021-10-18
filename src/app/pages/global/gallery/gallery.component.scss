@@ -1,9 +1,19 @@
+$desktop:1280px;
+
+@mixin desktop {
+    @media only screen and (min-width: $desktop){
+        @content;
+    }
+}
 
 .text {
     color: white;
     font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif ;
     font-size:0.9rem;
     margin-left: 2vw;
+    @include desktop {
+        font-size: 1.5rem;
+    }
 }
 
 .docu {
@@ -16,6 +26,9 @@
 
         img {
             width: 46vw;
+            @include desktop {
+                width: 18vw;
+            }
             
         }
     }
