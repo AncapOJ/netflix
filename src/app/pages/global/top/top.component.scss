@@ -1,0 +1,52 @@
+.text {
+    color: white;
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif ;
+    font-size:0.9rem;
+    margin-left: 2vw;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+
+    div{
+        
+        -webkit-text-stroke: 2px rgb(105, 104, 104);
+        color: transparent; 
+        padding: 0px;
+        margin: 0px;
+
+        // &:hover{
+        //     +p{
+        //         opacity: 1;
+        //     }
+        // }
+
+        &::before{
+            content:"1";
+            font-size: 20vh;
+            font-weight: bold;
+            margin: 0px;
+            font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+            position: relative;
+            left: 4vh;
+            z-index: 1;
+        }
+
+        img {
+            height: 15vh ;
+            z-index: 2;
+            margin:0px;
+        }
+
+        // p {
+        //     text-align: center;
+        //     margin-left: 20px;
+        //     opacity: 1;
+        //     color: white;   
+        // }
+
+        
+    }
+
+}

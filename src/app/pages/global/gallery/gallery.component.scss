@@ -1,0 +1,24 @@
+
+.text {
+    color: white;
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif ;
+    font-size:0.9rem;
+    margin-left: 2vw;
+}
+
+.docu {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        margin-left: 5px;
+
+
+        img {
+            width: 46vw;
+            
+        }
+    }
+
+
+}
