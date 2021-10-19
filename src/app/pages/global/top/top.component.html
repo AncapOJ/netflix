@@ -1,7 +1,6 @@
 <h2 class='text'>Los más populares de España hoy:</h2>
 <div class='top'>
     <div *ngFor="let item of top">
-        <img src="{{item.url}}" alt="{{item.name}}">
-        <!-- <p>{{item.name}}. {{item.type}}</p> -->
+        <img src="{{item.url}}" alt="{{item.name}}" class='zoom' [ngClass]="{'one':item.top==1,'two':item.top==2,'three':item.top==3,'four':item.top==4,'five':item.top==5}">
     </div>
 </div>

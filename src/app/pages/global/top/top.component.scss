@@ -27,12 +27,6 @@ $desktop:1280px;
         padding: 0px;
         margin: 0px;
 
-        // &:hover{
-        //     +p{
-        //         opacity: 1;
-        //     }
-        // }
-
         &::before{
             content:"1";
             font-size: 20vh;
@@ -41,23 +35,77 @@ $desktop:1280px;
             font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
             position: relative;
             left: 4vh;
-            z-index: 1;
+            z-index: 0;
         }
 
         img {
             height: 15vh ;
-            z-index: 2;
+            z-index: 3;
             margin:0px;
+            cursor: pointer;
         }
+    }
+}
 
-        // p {
-        //     text-align: center;
-        //     margin-left: 20px;
-        //     opacity: 1;
-        //     color: white;   
-        // }
+.one {
+    &::before{
+        content:"1";
+        font-size: 20vh;
+        font-weight: bold;
+        margin: 0px;
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        position: relative;
+        left: 4vh;
+        z-index: 1;
+    }
+}
+.two::before{
+    content:"2";
+    font-size: 20vh;
+    font-weight: bold;
+    margin: 0px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    position: relative;
+    left: 4vh;
+    z-index: 1;
+}
+.three::before{
+    content:"3";
+    font-size: 20vh;
+    font-weight: bold;
+    margin: 0px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    position: relative;
+    left: 4vh;
+    z-index: 1;
+}
+.four::before{
+    content:"4";
+    font-size: 20vh;
+    font-weight: bold;
+    margin: 0px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    position: relative;
+    left: 4vh;
+    z-index: 1;
+}
+.five::before{
+    content:"5";
+    font-size: 20vh;
+    font-weight: bold;
+    margin: 0px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    position: relative;
+    left: 4vh;
+    z-index: 1;
+}
 
-        
+.zoom {
+    transition: .2s;
+
+    &:hover {
+        transform: scale(1.5);
     }
 
+    
 }

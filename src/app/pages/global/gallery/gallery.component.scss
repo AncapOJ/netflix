@@ -29,9 +29,18 @@ $desktop:1280px;
             @include desktop {
                 width: 18vw;
             }
+            cursor: pointer;
             
         }
     }
 
 
+}
+
+.zoom {
+    transition: .2s;
+
+    &:hover {
+        transform: scale(1.5);
+    }
 }
