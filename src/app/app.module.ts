@@ -7,6 +7,8 @@ import { GlobalComponent } from './pages/global/global.component';
 import { NavComponent } from './pages/global/nav/nav.component';
 import { TopComponent } from './pages/global/top/top.component';
 import { GalleryComponent } from './pages/global/gallery/gallery.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { GalleryComponent } from './pages/global/gallery/gallery.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
